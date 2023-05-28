@@ -132,3 +132,24 @@ total = 0;
 }
 `module.exports = sumEven;`
 
+
+## Returning New arrays
+
+When we need to filter an array based on certain conditions, we can create a new array and add the elements to it if they meet our criteria.
+
+For example, if we want to filter an array to include only numbers that are greater than 10:
+
+` function greaterThanFive(array) {`
+
+    const newArray = [];
+    for(let i = 0; i < array.length; i++) {
+        const element = array[i];
+        
+        // is this element greater than 10?
+        if(element > 10) {
+        
+            // yes, push this element on our array
+            newArray.push(element);
+        }
+    }
+   ` return newArray;}`
