@@ -34,3 +34,48 @@ Here are a few examples of arrays containing primitive data types:
 Furthermore, it is also possible to store arrays inside other arrays, creating a structure known as a nested array.
 
 ```const nested = [[1, 2, [1, 2]], 2];```
+
+
+## Case Study 
+
+Code 1:
+
+
+`function hasOne(array) {
+
+    for (i =0; i<= array.length; i++) {
+    
+        if (array[i] === 1) {
+        
+            return true;
+            
+        } else {
+            return false;
+            
+        }
+    }
+}
+
+module.exports = hasOne;`
+
+In Code 1, the loop condition is i <= array.length, which includes the length of the array. The loop iterates over the array elements, and in the first iteration itself, it checks if the element at index 0 is equal to 1. If it is, it immediately returns true. If it's not, it returns false. In either case, the function terminates after the first iteration.
+
+Code 2:
+
+
+`function hasOne(array) {
+
+    for (let i =0; i< array.length; i++) {
+    
+        if (array[i] === 1) {
+            return true;
+            
+        }
+    }
+    return false;
+}
+
+module.exports = hasOne;`
+In Code 2, the loop condition is i < array.length, which excludes the length of the array. The loop iterates over the array elements, and if it finds an element equal to 1, it immediately returns true. If the loop completes without finding any 1 in the array, it reaches the return false statement outside the loop and returns false.
+
+The key difference is that Code 1 returns a result after the first iteration, while Code 2 iterates over the entire array and returns false only if no 1 is found. Code 2 allows for multiple iterations and a proper examination of all elements in the array before reaching a final result.
