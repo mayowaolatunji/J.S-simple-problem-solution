@@ -65,7 +65,6 @@ Code 2:
 
 
 `function hasOne(array) {
-
     for (let i =0; i< array.length; i++) {
     
         if (array[i] === 1) {
@@ -77,6 +76,7 @@ Code 2:
 }
 
 module.exports = hasOne;`
+
 In Code 2, the loop condition is i < array.length, which excludes the length of the array. The loop iterates over the array elements, and if it finds an element equal to 1, it immediately returns true. If the loop completes without finding any 1 in the array, it reaches the return false statement outside the loop and returns false.
 
 The key difference is that Code 1 returns a result after the first iteration, while Code 2 iterates over the entire array and returns false only if no 1 is found. Code 2 allows for multiple iterations and a proper examination of all elements in the array before reaching a final result.
@@ -121,6 +121,7 @@ If the element is even, add it to the total using the += operator. This accumula
 After iterating over all elements, the loop terminates, and the function returns the final value of total, which represents the sum of all even values in the array.
 
 `function sumEven(array) {
+
 total = 0;
     for (let i =0; i <= array.length; i++){
         if (array[i] %2 === 0){
@@ -130,6 +131,5 @@ total = 0;
     }
     return total
 }
-
 module.exports = sumEven;`
 
