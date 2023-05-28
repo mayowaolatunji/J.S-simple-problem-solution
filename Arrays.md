@@ -36,6 +36,7 @@ Furthermore, it is also possible to store arrays inside other arrays, creating a
 ```const nested = [[1, 2, [1, 2]], 2];```
 
 
+
 ## Case Study 
 
 Code 1:
@@ -79,3 +80,25 @@ module.exports = hasOne;`
 In Code 2, the loop condition is i < array.length, which excludes the length of the array. The loop iterates over the array elements, and if it finds an element equal to 1, it immediately returns true. If the loop completes without finding any 1 in the array, it reaches the return false statement outside the loop and returns false.
 
 The key difference is that Code 1 returns a result after the first iteration, while Code 2 iterates over the entire array and returns false only if no 1 is found. Code 2 allows for multiple iterations and a proper examination of all elements in the array before reaching a final result.
+
+
+## Running Value
+
+We can keep a running value while we're looping over an array. There are many reasons we might do this. For instance, if we wanted to find the average of many numbers like:
+
+`const result = average([80,90,98,100]); 
+
+console.log( result ); // 92`
+
+The average function will want to loop over the array and keep a running total of the values. Then it will divide by the length of the array to find the average:
+
+`function average(array) {
+
+    let total = 0;
+    
+    for(let i = 0; i < array.length; i++) {
+        total += array[i];
+        
+    }
+    return (total / array.length);
+}`
