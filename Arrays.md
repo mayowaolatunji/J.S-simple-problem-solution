@@ -102,3 +102,34 @@ The average function will want to loop over the array and keep a running total o
     }
     return (total / array.length);
 }`
+
+
+### problem 1 (running value)
+
+Find the Sum of Even Values
+Given an array, find the sum of all even values inside the array and return it.
+
+**Solution**
+Initialize a variable total to 0. This variable will store the running sum of even values.
+
+Use a for loop to iterate over each element of the array. The loop starts from index 0 and goes up to array.length, inclusive.
+
+Inside the loop, check if the element at index i is even by using the modulus operator %. If the remainder of dividing the element by 2 is 0, it means the element is even.
+
+If the element is even, add it to the total using the += operator. This accumulates the sum of all even values encountered so far.
+
+After iterating over all elements, the loop terminates, and the function returns the final value of total, which represents the sum of all even values in the array.
+
+`function sumEven(array) {
+total = 0;
+    for (let i =0; i <= array.length; i++){
+        if (array[i] %2 === 0){
+        
+            total += array[i]
+                }
+    }
+    return total
+}
+
+module.exports = sumEven;`
+
