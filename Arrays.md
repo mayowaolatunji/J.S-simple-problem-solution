@@ -153,3 +153,7 @@ For example, if we want to filter an array to include only numbers that are grea
         }
     }
    ` return newArray;}`
+   
+In this scenario, the approach involves creating a new array (newArray) and selectively adding elements from the original array to it based on a specific condition. In this case, the condition is that the element should be greater than 10. Finally, the new array is returned as the result.
+
+By iterating over each element in the original array, the code checks if the element is greater than 10. If the condition is satisfied, the element is added to the newArray using the push method. Finally, the newArray is returned as the result, containing only the elements that are greater than 10 from the original array.
