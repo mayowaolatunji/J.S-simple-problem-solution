@@ -157,3 +157,38 @@ For example, if we want to filter an array to include only numbers that are grea
 In this scenario, the approach involves creating a new array (newArray) and selectively adding elements from the original array to it based on a specific condition. In this case, the condition is that the element should be greater than 10. Finally, the new array is returned as the result.
 
 By iterating over each element in the original array, the code checks if the element is greater than 10. If the condition is satisfied, the element is added to the newArray using the push method. Finally, the newArray is returned as the result, containing only the elements that are greater than 10 from the original array.
+
+
+## To Write a function that will take an array of numbers and return a new array that only contains unique numbers.
+
+```
+function unique(array) {
+   
+   const newArray = [];
+   for (let i = 0; i < array.length; i++) {
+        const digit = array[i];
+
+        if (newArray.indexOf(digit) === -1) {
+            newArray.push(digit);
+        }
+    }
+
+    return newArray;
+}
+module.exports = unique;
+```
+
+
+- The unique function takes an input array and returns a new array containing only the unique elements from the input array. Here's a detailed explanation of the code:
+
+- const newArray = [];: This line initializes an empty array newArray that will store the unique elements.
+
+- for (let i = 0; i < array.length; i++) {: This is a for loop that iterates over each element in the input array.
+
+- const element = array[i];: Inside the loop, the current element of the array is assigned to the variable element. This allows easier reference to the element during comparison and manipulation.
+
+- if (newArray.indexOf(element) === -1) {: This condition checks if the element is not already present in the newArray. The indexOf method is used to search for the element in newArray. If the element is not found (returns -1), it means it is unique.
+
+- newArray.push(element);: If the element is unique, it is added to the newArray using the push method. This ensures that only unique elements are included in the newArray.
+
+- After the loop finishes iterating over all elements in the input array, the newArray is returned as the result.
