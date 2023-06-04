@@ -145,6 +145,7 @@ module.exports = sumEven;
 
 ## Returning New arrays
 
+
 When we need to filter an array based on certain conditions, we can create a new array and add the elements to it if they meet our criteria.
 
 For example, if we want to filter an array to include only numbers that are greater than 10:
@@ -171,7 +172,8 @@ In this scenario, the approach involves creating a new array (newArray) and sele
 By iterating over each element in the original array, the code checks if the element is greater than 10. If the condition is satisfied, the element is added to the newArray using the push method. Finally, the newArray is returned as the result, containing only the elements that are greater than 10 from the original array.
 
 
-## To Write a function that will take an array of numbers and return a new array that only contains unique numbers.
+### To Write a function that will take an array of numbers and return a new array that only contains unique numbers.
+
 
 ```
 function unique(array) {
@@ -204,3 +206,31 @@ module.exports = unique;
 - newArray.push(element);: If the element is unique, it is added to the newArray using the push method. This ensures that only unique elements are included in the newArray.
 
 - After the loop finishes iterating over all elements in the input array, the newArray is returned as the result.
+
+
+## Modifying Array Values
+
+`n JavaScript, we can access and modify array values using square brackets notation. For example, to read a value from a specific position in an array, we use array[index]. Similarly, we can assign new values to those positions using the assignment operator =.
+
+Let's consider an example:
+```
+const array = [1, 2, 3];
+array[0] = 5;
+console.log(array); // [5, 2, 3]
+```
+
+In this code snippet, we have an array [1, 2, 3]. By assigning array[0] = 5, we update the value at the first position (index 0) to be 5. After the modification, the array becomes [5, 2, 3].
+
+```
+function addOne(array) {
+    for (let i = 0; i <= array.length; i++) {
+        if (array[i] >= 1) {
+            array[i] += 1;
+        }
+    }
+}
+
+module.exports = addOne;
+
+
+```
