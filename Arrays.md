@@ -42,7 +42,8 @@ Furthermore, it is also possible to store arrays inside other arrays, creating a
 Code 1:
 
 
-` function hasOne(array) {`
+```
+function hasOne(array) {
 
     for (i =0; i<= array.length; i++) {
     
@@ -56,14 +57,16 @@ Code 1:
         }
     }
 }
-`module.exports = hasOne; `
+module.exports = hasOne; 
+```
 
 In Code 1, the loop condition is i <= array.length, which includes the length of the array. The loop iterates over the array elements, and in the first iteration itself, it checks if the element at index 0 is equal to 1. If it is, it immediately returns true. If it's not, it returns false. In either case, the function terminates after the first iteration.
 
 Code 2:
 
 
-`function hasOne(array) {`
+```
+function hasOne(array) {
     for (let i =0; i< array.length; i++) {
     
         if (array[i] === 1) {
@@ -74,7 +77,8 @@ Code 2:
     return false;
 }
 
-`module.exports = hasOne;`
+ module.exports = hasOne;
+ ```
 
 In Code 2, the loop condition is i < array.length, which excludes the length of the array. The loop iterates over the array elements, and if it finds an element equal to 1, it immediately returns true. If the loop completes without finding any 1 in the array, it reaches the return false statement outside the loop and returns false.
 
@@ -85,13 +89,16 @@ The key difference is that Code 1 returns a result after the first iteration, wh
 
 We can keep a running value while we're looping over an array. There are many reasons we might do this. For instance, if we wanted to find the average of many numbers like:
 
-`const result = average([80,90,98,100]); 
+```
+const result = average([80,90,98,100]); 
 
-console.log( result ); // 92`
+console.log( result ); // 92
+```
 
 The average function will want to loop over the array and keep a running total of the values. Then it will divide by the length of the array to find the average:
 
-`function average(array) {`
+```
+function average(array) {
 
     let total = 0;
     
@@ -100,7 +107,8 @@ The average function will want to loop over the array and keep a running total o
         
     }
     return (total / array.length);
-`}`
+}
+```
 
 
 ### problem 1 (running value)
@@ -119,7 +127,8 @@ If the element is even, add it to the total using the += operator. This accumula
 
 After iterating over all elements, the loop terminates, and the function returns the final value of total, which represents the sum of all even values in the array.
 
-`function sumEven(array) {`
+```
+function sumEven(array) {
 
 total = 0;
     for (let i =0; i <= array.length; i++){
@@ -130,7 +139,8 @@ total = 0;
     }
     return total
 }
-`module.exports = sumEven;`
+module.exports = sumEven;
+```
 
 
 ## Returning New arrays
@@ -139,7 +149,7 @@ When we need to filter an array based on certain conditions, we can create a new
 
 For example, if we want to filter an array to include only numbers that are greater than 10:
 
-` function greaterThanFive(array) {`
+`function greaterThanFive(array) {`
 
     const newArray = [];
     for(let i = 0; i < array.length; i++) {
@@ -153,6 +163,8 @@ For example, if we want to filter an array to include only numbers that are grea
         }
     }
    ` return newArray;}`
+    
+  
    
 In this scenario, the approach involves creating a new array (newArray) and selectively adding elements from the original array to it based on a specific condition. In this case, the condition is that the element should be greater than 10. Finally, the new array is returned as the result.
 
