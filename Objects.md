@@ -1,6 +1,6 @@
 # Objects
 
-The object initializer syntax starts with an open curly-brace { and ends with a close curly-brace } with a list of 
+The object initializer syntax starts with an open curly-brace { and ends with a close curly-brace } with a list of </br>
 key-value pairs in the middle. Let's take a look at a person object:
 
 ```
@@ -12,3 +12,8 @@ const person = {
     grumpy: true
 }
 ```
+
+We can retrieve these values by key:
+
+console.log( person.toes ); // 10
+console.log( person.hairColor ); // brown
