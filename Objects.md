@@ -15,5 +15,5 @@ const person = {
 
 We can retrieve these values by key:
 
-console.log( person.toes ); // 10
+console.log( person.toes ); // 10 </br>
 console.log( person.hairColor ); // brown
