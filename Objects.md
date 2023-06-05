@@ -13,10 +13,15 @@ const person = {
 }
 ```
 
-We can retrieve these values by key:
+### We can retrieve these values by key:
 
 console.log( person.toes ); // 10 </br>
 console.log( person.hairColor ); // brown
+
+We can use the . property accessor operator or we can use brackets [] just like with arrays! </br>
+console.log( team.name ); // Mets
+console.log( team['name'] ); // Mets
+
 
 ***Exercise
 Let's create an object representing a pizza order! 
