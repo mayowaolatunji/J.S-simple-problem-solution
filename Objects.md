@@ -39,4 +39,27 @@ deliveryInstructions - Any string of instructions. </br>
     
 };
 
-module.exports = order; ```
+module.exports = order; 
+```
+
+
+## Array of Objects
+
+Things get really interesting when we start to put objects inside arrays and vice-versa!
+
+Let's take our team example again:
+
+```const team = {
+    name: "Mets",
+    wins: 86,
+    inPlayoffs: false,
+};
+```
+
+In a league, we might have many teams:
+
+```const teams = [team1, team2, team3];
+for(let i = 0; i < teams.length; i++) {
+    console.log(teams[i].name); 
+}
+```
