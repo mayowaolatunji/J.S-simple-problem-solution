@@ -63,3 +63,38 @@ for(let i = 0; i < teams.length; i++) {
     console.log(teams[i].name); 
 }
 ```
+
+
+## Typed Orders
+
+Code is more readable and mantainable when numbers are defined.
+
+Take the following example:
+
+```
+const card = {
+    suit: 1,
+    value: 5
+}
+```
+
+What is this card's suit? We know the value is 1, but what does that mean? 
+
+Let's define CARD_SUITS:
+
+```
+const CARD_SUITS = {
+    DIAMONDS: 0,
+    HEARTS: 1,
+    SPADES: 2,
+    CLUBS: 3
+}
+```
+Using this object we can clearly label our card suit:
+
+```
+const card = {
+    suit: CARD_SUITS.HEARTS,
+    value: 5
+}
+```
