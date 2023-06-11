@@ -100,7 +100,7 @@ const card = {
 ```
 
 
-### Task
+### Task 1
 
 Modify the numberOfPizzas function to only count pizzas when the order.type is equal to ORDER_TYPES.PIZZA.
 
@@ -113,3 +113,26 @@ const orders = [
 ];
 ```
 
+***Solution***
+
+```
+const ORDER_TYPES = {
+    PIZZA: 0,
+    WINGS: 1,
+    SALAD: 2,
+}
+
+function numberOfPizzas(orders) {
+    let totalPizzas = 0;
+
+    for (let i = 0; i < orders.length; i++) {
+        totalPizzas += orders[i].pizzas;
+    }
+
+    return totalPizzas;
+}
+
+module.exports = numberOfPizzas;
+
+module.exports = ORDER_TYPES;
+```
