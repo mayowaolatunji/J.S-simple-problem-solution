@@ -50,6 +50,7 @@ Things get really interesting when we start to put objects inside arrays and vic
 Let's take our team example again:
 
 ```const team = {
+
     name: "Mets",
     wins: 86,
     inPlayoffs: false,
@@ -128,7 +129,6 @@ function numberOfPizzas(orders) {
     for (let i = 0; i < orders.length; i++) {
         totalPizzas += orders[i].pizzas;
     }
-
     return totalPizzas;
 }
 
@@ -136,6 +136,7 @@ module.exports = numberOfPizzas;
 
 module.exports = ORDER_TYPES;
 ```
+
 
 ## Editing Object Values
 
