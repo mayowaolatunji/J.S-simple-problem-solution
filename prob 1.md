@@ -145,3 +145,7 @@ function isPalindrome(string) {
 
 module.exports = isPalindrome;
 ```
+
+![image](https://github.com/mayowaolatunji/J.S-simple-problem-solution/assets/96064869/a2448d90-224b-4426-bf83-17b8ce5780c5)
+
+
