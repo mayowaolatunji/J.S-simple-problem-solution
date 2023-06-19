@@ -39,3 +39,27 @@ function halfValue(numbers) {
 module.exports = halfValue;
 
 ```
+
+# 3
+
+Your Goal: Count the C's
+The function countC takes a string str as its only argument.
+
+This function should return the number of c's found in the string. It must count both lower-case c and upper-case C.
+
+## Solution 
+
+```
+function countC(str) {
+    let j = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === "c" || str[i] === "C") {
+            j++;
+        }
+    }
+    return j;
+}
+
+module.exports = countC;
+
+```
