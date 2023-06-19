@@ -63,3 +63,31 @@ function countC(str) {
 module.exports = countC;
 
 ```
+
+# 4
+
+Count Vowels
+Write a function countVowels that takes in a string and counts how many vowels there are in the word. Vowels include: "a", "e", "i", "o", and "u".
+
+Handle lowercase and uppercase vowels.
+
+## Solution 
+
+function countVowels(str) {
+    let j = 0;
+    for (let i = 0; i < str.length; i++) {
+        const char = str[i].toLowerCase();
+        if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+            j++;
+        }
+    }
+    return j;
+}
+
+module.exports = countVowels;
+
+**NOTE: **
+
+- We introduce a new variable char that stores the lowercase version of the character at each index i in the string. This is achieved using the toLowerCase() method.
+
+- We modify the if condition to compare char (lowercase) with the lowercase vowels ("a", "e", "i", "o", "u"). By converting both char and the comparison vowels to lowercase, we can perform a case-insensitive comparison.
