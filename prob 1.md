@@ -93,3 +93,26 @@ module.exports = countVowels;
 - We introduce a new variable char that stores the lowercase version of the character at each index i in the string. This is achieved using the toLowerCase() method.
 
 - We modify the if condition to compare char (lowercase) with the lowercase vowels ("a", "e", "i", "o", "u"). By converting both char and the comparison vowels to lowercase, we can perform a case-insensitive comparison.
+
+
+# 5
+
+Reverse
+Write a function reverse that takes a string as an argument and returns a string with all the letters reversed.
+
+For example, reverse("cat") would return the string "tac".
+
+## Solution
+
+```
+function reverse(string) {
+    let j = "";
+    for (let i = string.length - 1; i >= 0; i--) {
+        j += string[i];
+    }
+    return j;
+}
+
+module.exports = reverse;
+
+```
