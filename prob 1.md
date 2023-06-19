@@ -149,3 +149,34 @@ module.exports = isPalindrome;
 ![image](https://github.com/mayowaolatunji/J.S-simple-problem-solution/assets/96064869/a2448d90-224b-4426-bf83-17b8ce5780c5)
 
 
+# 7
+
+Sum Together: 
+Write a function sumTogether that takes two arrays of numbers and returns a single array with the sum of each corresponding index value.
+
+Assume both arrays are the same length.
+
+const arr1 = [1, 2, 3];
+const arr2 = [3, 4, 5];
+
+sumTogether(arr1, arr2); // returns [4, 6, 8];
+
+## Solution
+
+```
+function sumTogether(arr1, arr2) {
+  let sum = [];
+  if (arr1.length >= arr2.length) {
+    for (let i = 0; i < arr1.length; i++) {
+      sum.push(arr1[i] + (arr2[i] || 0));
+    }
+  } else {
+    for (let i = 0; i < arr2.length; i++) {
+      sum.push((arr1[i] || 0) + arr2[i]);
+    }
+  }
+  return sum;
+}
+
+module.exports = sumTogether;
+```
