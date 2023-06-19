@@ -18,3 +18,24 @@ function shortestString(str1, str2) {
 
 module.exports = shortestString;
 ```
+
+# 2
+
+The function halfValue takes an array of numbers. It should return a new array with all the original values halved.
+
+Odd numbers should be rounded up to the nearest whole number.
+
+## Solution 
+
+```
+function halfValue(numbers) {
+    let n = [];
+    for (let i = 0; i < numbers.length; i++) {
+        n.push(Math.round(numbers[i] / 2));
+    }
+    return n;
+}
+
+module.exports = halfValue;
+
+```
