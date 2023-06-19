@@ -73,6 +73,7 @@ Handle lowercase and uppercase vowels.
 
 ## Solution 
 
+```
 function countVowels(str) {
     let j = 0;
     for (let i = 0; i < str.length; i++) {
@@ -83,6 +84,7 @@ function countVowels(str) {
     }
     return j;
 }
+```
 
 module.exports = countVowels;
 
