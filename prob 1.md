@@ -97,7 +97,7 @@ module.exports = countVowels;
 
 # 5
 
-Reverse
+Reverse: 
 Write a function reverse that takes a string as an argument and returns a string with all the letters reversed.
 
 For example, reverse("cat") would return the string "tac".
@@ -115,4 +115,33 @@ function reverse(string) {
 
 module.exports = reverse;
 
+```
+# 6
+
+Palindrome: 
+Write a function isPalindrome that takes a word string and returns true if the word is a palindrome or false if it is not.
+
+A palindrome is a word that is spelled the same forwards as it is backwards.
+
+ The word pop is a palindrome.
+
+## Solution
+
+```
+function isPalindrome(string) {
+    let j = "";
+    for (let i = 0; i<=string.length; i++){
+        if (string[i] === string[string.length -1-i]){
+            return true
+
+        } else {
+            return false
+
+        }
+        
+    }
+
+}
+
+module.exports = isPalindrome;
 ```
