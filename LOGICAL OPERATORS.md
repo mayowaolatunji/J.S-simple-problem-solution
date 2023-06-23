@@ -29,3 +29,19 @@ if(car || motorcycle || truck) {
     driveToAirport();
 }
 ```
+
+### Task 1
+
+Complete the willEat function. The three arguments will be boolean values (true or false). If any of them are true, return true.
+
+```
+function willEat(hasPizza, hasDonuts, hasCookies) {
+    
+}
+
+module.exports = willEat;
+```
+
+---
+![Uploading Screenshot 2023-06-23 212346.jpg…]()
+
