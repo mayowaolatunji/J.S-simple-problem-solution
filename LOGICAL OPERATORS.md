@@ -22,4 +22,10 @@ If we needed to change the driveToAirport function, we would have to change it i
 
 
 
+Let's try to accomplish the same functionality with the Logical OR (||) operator:
 
+```
+if(car || motorcycle || truck) {
+    driveToAirport();
+}
+```
