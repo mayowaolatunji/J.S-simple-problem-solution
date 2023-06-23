@@ -63,3 +63,30 @@ And it's not just limited to empty strings either:
 `const age = user.age || 99;`
 
  If user.age is undefined or 0 we will default to 99. For that matter user.age could be any falsey value and it would default to 99.
+
+## AND Operator
+
+Another important logical operator is &&, which is called Logical AND:
+
+```
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(false && false); // false
+```
+
+ Notice that both values must be true for the expression to evaluate to true. We need this to be true AND that to be true as well.
+
+We can, of course, do the same thing with variables:
+
+```
+let a = true;
+let b = true;
+
+console.log(a && b); // true
+
+b = false;
+
+console.log(a && b); // false
+console.log(b && a); // false
+```
