@@ -45,3 +45,21 @@ module.exports = willEat;
 ---
 ![Uploading Screenshot 2023-06-23 212346.jpg…]()
 
+## Default Operator
+
+In the last section,  we referred to || as the Logical OR operator.
+
+This operator is also sometimes referred to as the default operator due to its behavior with truthy and falsy values.
+
+Take, for example: `console.log("" || "Something Else"); // Something Else`
+
+
+`const message = WELCOME_MESSAGE || "Hello there!";` 
+
+ Here the message is guaranteed a truthy value even if WELCOME_MESSAGE is empty.
+
+And it's not just limited to empty strings either:
+
+`const age = user.age || 99;`
+
+ If user.age is undefined or 0 we will default to 99. For that matter user.age could be any falsey value and it would default to 99.
