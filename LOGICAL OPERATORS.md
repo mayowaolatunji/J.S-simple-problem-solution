@@ -117,3 +117,18 @@ function friendName(friend) {
 
 module.exports = friendName;
 ```
+
+
+## NOT Operator
+The final logical operator we will discuss is the "!" operator. Commonly referred to as the NOT or negation operator.
+
+This operator will flip true and false:
+
+```
+console.log(!true); // false
+console.log(!false); // true
+// It will also flip truthy and falsey values:
+
+console.log(!2); // false
+console.log(!undefined); // true
+```
