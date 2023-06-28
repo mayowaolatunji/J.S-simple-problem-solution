@@ -95,4 +95,15 @@ console.log(b && a); // false
 
 We have learned that the || operator can be called the Logical OR operator or the default operator. Likewise, the && operator can be referred to as the Logical AND operator or the guard operator.
 
-These operators are useful for guarding against run-time exceptions or errors when working with falsey values.
+These operators are useful for guarding against run-time exceptions or errors when working with false values.
+
+In the second example, if we tried to retrieve this property directly, we would hit a run-time exception:
+
+```
+const user2 = undefined;
+console.log(user2.name);
+```
+
+Trying to log user2.name right here would result in an uncaught error: Uncaught TypeError: Cannot read property 'name' of undefined.
+
+ Uncaught errors are bad! They'll stop our code execution. This could result in some really ugly errors for users.
