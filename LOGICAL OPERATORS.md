@@ -132,3 +132,21 @@ console.log(!false); // true
 console.log(!2); // false
 console.log(!undefined); // true
 ```
+
+### ex1: 
+
+In between two towns, there exists a river where a bridge has been constructed to facilitate car crossings. However, the bridge has limited capacity, allowing only one car to pass at a time. This situation poses a problem when both cars attempt to cross simultaneously since neither would be able to pass.
+
+To address this, you are required to implement the carCrossing function, which should return true only when one car is in the process of crossing the bridge.
+
+### solution: 
+
+```
+function carCrossing(aCrossing, bCrossing) {
+    return ((aCrossing && !bCrossing) || (!aCrossing && bCrossing))
+    
+    
+}
+
+module.exports = carCrossing;
+```
