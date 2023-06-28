@@ -90,3 +90,9 @@ b = false;
 console.log(a && b); // false
 console.log(b && a); // false
 ```
+
+## Guard Operator
+
+We have learned that the || operator can be called the Logical OR operator or the default operator. Likewise, the && operator can be referred to as the Logical AND operator or the guard operator.
+
+These operators are useful for guarding against run-time exceptions or errors when working with falsey values.
