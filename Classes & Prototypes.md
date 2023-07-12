@@ -2,11 +2,12 @@
 
 ## This Keyword
 
-In JavaScript, the this keyword refers to the object that is currently executing or being used within a function or method. Its value is determined by how a function is called or how a method is invoked. The this keyword allows you to access and manipulate the properties and methods of the current object.
+In JavaScript, the **this** keyword refers to the object that is currently executing or being used within a function or method. Its value is determined by how a function is called or how a method is invoked. The 
+**this** keyword allows you to access and manipulate the properties and methods of the current object.
 
-The behavior of this can vary depending on the context in which it is used. Here are some common scenarios:
+The behavior of **this** can vary depending on the context in which it is used. Here are some common scenarios:
 
-Global scope: If this is used outside of any function or object, it refers to the global object, which is usually window in a web browser or global in Node.js.
+Global scope: If **this** is used outside of any function or object, it refers to the global object, which is usually a window in a web browser or global in Node.js.
 
 Object method: When this is used inside a method of an object, it refers to the object itself. You can use this to access other properties and methods of the object.
 
