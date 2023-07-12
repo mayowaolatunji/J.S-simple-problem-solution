@@ -65,3 +65,7 @@ greet.call(person); // Output: Hello, Alice!
 ```
 
 It's important to note that the value of this is not determined lexically (based on the code structure), but rather dynamically, depending on how the function is invoked at runtime. Therefore, this can be a common source of confusion, especially when using arrow functions or nested functions, as their behavior differs from regular functions in relation to this.
+
+
+## Prototype Chain
+
