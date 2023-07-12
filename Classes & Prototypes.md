@@ -66,6 +66,13 @@ greet.call(person); // Output: Hello, Alice!
 
 It's important to note that the value of this is not determined lexically (based on the code structure), but rather dynamically, depending on how the function is invoked at runtime. Therefore, this can be a common source of confusion, especially when using arrow functions or nested functions, as their behavior differs from regular functions in relation to this.
 
+*** 
+
 
 ## Prototype Chain
 
+#### Prototypes
+
+Many programming languages have a concept of a Class. Classes are templates for creating objects called instances. Each instance will have it's own set of properties called state. The class provides initial state values and functions copied into each new instance.
+
+JavaScript does not have classes in a traditional sense. It has prototypes. They function similarily with a few key differences! Primarily, prototypes provide a way to share properties and functions by linking objects together. This is contrary to classes which traditionally copy functionality to new instances.
