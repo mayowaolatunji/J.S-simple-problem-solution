@@ -133,3 +133,5 @@ console.log(car.make) // Toyota
 console.log(car2.model) // Civic
 ```
 Here Car is just a regular JavaScript function. Often it is referred to as a constructor function, although it is not a special function by any means! It is capitalized purely by convention. We capitalize it to show we plan to use it with the new operator.
+
+By utilizing the `new` operator, we have the ability to generate fresh instances of Car. The new operator accomplishes this by creating a new object and assigning it to the this keyword within the Car function, as demonstrated in the above example. Moreover, the new operator implicitly returns this newly created object, unless an alternative object is explicitly returned.
