@@ -73,7 +73,7 @@ It's important to note that the value of this is not determined lexically (based
 
 #### Prototypes
 
-Many programming languages have a concept of a Class. Classes are templates for creating objects called instances. Each instance will have it's own set of properties called state. The class provides initial state values and functions copied into each new instance.
+In many programming languages, classes serve as a blueprint for generating objects known as instances. Every instance possesses its unique collection of properties referred to as state. The class supplies initial state values and functions that are duplicated into each freshly created instance. Classes are templates for creating objects called instances. Each instance will have its own set of properties called state. The class provides initial state values and functions copied into each new instance.
 
 JavaScript does not have classes in a traditional sense. It has prototypes. They function similarily with a few key differences! Primarily, prototypes provide a way to share properties and functions by linking objects together. This is contrary to classes which traditionally copy functionality to new instances.
 
