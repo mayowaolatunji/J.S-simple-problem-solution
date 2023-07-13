@@ -115,3 +115,21 @@ Here, the sayHello method is added to Person.prototype. Now, person can access a
 The prototype chain allows for efficient reuse of code and memory. Rather than creating a separate copy of each method for every instance, methods are shared among objects through their prototype chain. This means that changes made to the prototype object will be reflected in all instances that inherit from it.
 
 It's important to note that the prototype chain is not limited to a single level. Objects can have their own prototypes, which in turn can have their prototypes, forming a chain of objects. When accessing a property or method, JavaScript will traverse the prototype chain until it finds the property or reaches the end of the chain (Object.prototype). This enables multiple levels of inheritance and allows for complex object relationships.
+
+#### Syntax Example
+
+Let's take a look at how prototypes are traditionally used:
+
+```
+function Car(make, model) {
+    this.make = make;
+    this.model = model;
+}
+
+const car = new Car('Toyota', 'Camry');
+const car2 = new Car('Honda', 'Civic');
+
+console.log(car.make) // Toyota
+console.log(car2.model) // Civic
+```
+Here Car is just a regular JavaScript function. Often it is referred to as a constructor function, although it is not a special function by any means! It is capitalized purely by convention. We capitalize it to show we plan to use it with the new operator.
