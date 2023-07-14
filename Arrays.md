@@ -280,3 +280,38 @@ function removeOccurrences(array, num) {
 
 module.exports = removeOccurrences;
 ```
+
+
+## Array Sort
+
+### Default Sort Behavior
+
+The comparison function is optional. So, what happens if we don't pass one to sort?
+
+```
+const result = [3, 2, 4, 1].sort();
+
+console.log(result); // [1, 2, 3, 4]
+```
+
+Without a comparison function, the array elements are converted to strings and compared. Lower values are moved to the front of the array.
+
+At this point it looks like it works pretty well for sorting ascending numbers. But wait! Let's take a look at another example:
+
+```
+const result = [20, 1, 2, 3].sort();
+
+console.log(result); // [1, 2, 20, 3]
+```
+
+Uh-oh! 20 came before 3. Sorting numerically, we know that 3 should come first. However, you have to remember that the numbers are first converted to strings before sorting. When "20" is compared to "3", the first characters are compared and "2" comes before "3". Therefore, "20" is sorted in front of "3". Very tricky!
+
+The default sorting is more intuitive when the elements are strings as they will be sorted as such:
+
+```
+const result = ['orange', 'berry', 'apple', 'cherry'].sort();
+
+console.log(result); // ["apple", "berry", "cherry", "orange"]
+```
+
+In summary, when sorting numbers, rather than using the default sort functionality, you should pass in your own comparison function to guarantee a proper sort.
