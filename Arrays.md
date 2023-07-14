@@ -315,3 +315,37 @@ console.log(result); // ["apple", "berry", "cherry", "orange"]
 ```
 
 In summary, when sorting numbers, rather than using the default sort functionality, you should pass in your own comparison function to guarantee a proper sort.
+
+
+#### Numbers in ascending order
+
+sorting numbers in ascending order (1,2,3...):
+
+```
+[3,2,4,1].sort(function comparison(a,b) {
+    if(a < b) {
+        // take a first
+        return -1;
+    }
+    if(b < a) {
+        // take b first
+        return 1;
+    }
+    // no change is needed
+    return 0;
+});
+```
+Can be further simplified to be:
+
+```
+[3,2,4,1].sort(function comparison(a,b) {
+    return a - b;
+});
+
+
+//or 
+
+[3,2,4,1].sort((a, b) => a - b);
+
+
+```
