@@ -349,3 +349,16 @@ Can be further simplified to be:
 
 
 ```
+
+#### Sorting Descending
+
+```
+function sortDown(array) {
+
+    array.sort((a, b) => b - a);
+
+
+}
+
+module.exports = sortDown;
+```
