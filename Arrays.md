@@ -366,3 +366,14 @@ module.exports = sortDown;
 ### Comparing Strings
 
 Conveniently, `localeCompare` returns the numerical values we need to help sort our strings! As shown above, when a string is compared to one that would come after it, the result is -1. When compared to a string that should precede it, the result is 1.
+
+
+Given an array of strings, we can sort them in ascending order ('a','b','c'...) and return the sorted array.
+
+```
+function sortStringsUp(array) {
+    array.sort((a, b) => a.localeCompare(b))
+}
+
+module.exports = sortStringsUp;
+```
