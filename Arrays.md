@@ -362,3 +362,7 @@ function sortDown(array) {
 
 module.exports = sortDown;
 ```
+
+### Comparing Strings
+
+Conveniently, `localeCompare` returns the numerical values we need to help sort our strings! As shown above, when a string is compared to one that would come after it, the result is -1. When compared to a string that should precede it, the result is 1.
